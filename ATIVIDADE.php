@@ -13,7 +13,7 @@ CREATE TABLE Cliente
 
 $con = new PDO("mysql:host=localhost;dbname=ATIVIDADE", "root", "");
 $con->query("INSERT INTO Cliente(Id,Nome,Email,Cidade) VALUES ('12','Luc','Lucasalves65@gmail.com', 'Belo Horizonte');");
-$con->query("UPDATE Cliente SET Nome='Lucas Alves' WHERE id_pessoa='12';");
-$con->query("DELETE FROM Cliente WHERE id_pessoa='12';");
+$con->query("UPDATE Cliente SET Nome='Lucas Alves' WHERE Id='12';");
+$con->query("DELETE FROM Cliente WHERE id='12';");
 $busca = $con->query("SELECT * FROM Cliente");
 ?>
